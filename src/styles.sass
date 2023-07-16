@@ -1,0 +1,35 @@
+@import "./assets/styles/mixins.sass"
+
+// Margins
+@include list-loop('.m-x-', 'margin')
+@include list-loop('.m-h-', 'margin-left', 'margin-right')
+@include list-loop('.m-v-', 'margin-top', 'margin-bottom')
+@include list-loop('.m-t-', 'margin-top')
+@include list-loop('.m-r-', 'margin-right')
+@include list-loop('.m-b-', 'margin-bottom')
+@include list-loop('.m-l-', 'margin-left')
+// Paddings
+@include list-loop('.p-x-', 'padding')
+@include list-loop('.p-h-', 'padding-left', 'padding-right')
+@include list-loop('.p-v-', 'padding-top', 'padding-bottom')
+@include list-loop('.p-t-', 'padding-top')
+@include list-loop('.p-r-', 'padding-right')
+@include list-loop('.p-b-', 'padding-bottom')
+@include list-loop('.p-l-', 'padding-left')
+
+.flex
+  display: flex
+  &-column
+    flex-direction: column
+  &-center
+    align-items: center
+  &-stretch
+    justify-content: stretch
+.space-between
+  justify-content: space-between
+.jus-center
+  justify-content: center
+.mat-mdc-form-field
+  text-align: center !important
+.mat-mdc-form-field-error
+  padding-top: 10px !important
